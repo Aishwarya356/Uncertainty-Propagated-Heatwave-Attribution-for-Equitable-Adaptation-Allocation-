@@ -1,0 +1,128 @@
+{
+ "n_localities": 10,
+ "n_events": 78,
+ "n_attribution_samples": 50,
+ "n_cmip6_models": 33,
+ "cmip6_models": [
+  "ACCESS-CM2",
+  "ACCESS-ESM1-5",
+  "AWI-CM-1-1-MR",
+  "BCC-CSM2-MR",
+  "CAMS-CSM1-0",
+  "CESM2",
+  "CESM2-WACCM",
+  "CMCC-CM2-SR5",
+  "CNRM-CM6-1",
+  "CNRM-CM6-1-HR",
+  "CNRM-ESM2-1",
+  "CanESM5",
+  "EC-Earth3",
+  "EC-Earth3-Veg",
+  "FGOALS-g3",
+  "GFDL-CM4",
+  "GFDL-ESM4",
+  "HadGEM3-GC31-LL",
+  "IITM-ESM",
+  "INM-CM4-8",
+  "INM-CM5-0",
+  "IPSL-CM6A-LR",
+  "KACE-1-0-G",
+  "KIOST-ESM",
+  "MIROC-ES2L",
+  "MIROC6",
+  "MPI-ESM1-2-HR",
+  "MPI-ESM1-2-LR",
+  "MRI-ESM2-0",
+  "NESM3",
+  "NorESM2-LM",
+  "NorESM2-MM",
+  "UKESM1-0-LL"
+ ],
+ "lambda_primary": 1.0,
+ "spearman_matrix": {
+  "a": {
+   "a": 1.0,
+   "b": -0.043,
+   "c": 0.583,
+   "d": 0.394
+  },
+  "b": {
+   "a": -0.043,
+   "b": 1.0,
+   "c": 0.354,
+   "d": 0.828
+  },
+  "c": {
+   "a": 0.583,
+   "b": 0.354,
+   "c": 1.0,
+   "d": 0.546
+  },
+  "d": {
+   "a": 0.394,
+   "b": 0.828,
+   "c": 0.546,
+   "d": 1.0
+  }
+ },
+ "kendall_matrix": {
+  "a": {
+   "a": 1.0,
+   "b": 0.0,
+   "c": 0.414,
+   "d": 0.289
+  },
+  "b": {
+   "a": 0.0,
+   "b": 1.0,
+   "c": 0.119,
+   "d": 0.69
+  },
+  "c": {
+   "a": 0.414,
+   "b": 0.119,
+   "c": 1.0,
+   "d": 0.46
+  },
+  "d": {
+   "a": 0.289,
+   "b": 0.69,
+   "c": 0.46,
+   "d": 1.0
+  }
+ },
+ "top3": {
+  "(a) Historical vulnerability": [
+   "Adirampattinam",
+   "Marakkanam",
+   "Mimisal"
+  ],
+  "(b) Forecast risk": [
+   "Chennai",
+   "Mahabalipuram",
+   "Marakkanam"
+  ],
+  "(c) Attribution only": [
+   "Mimisal",
+   "Adirampattinam",
+   "Cuddalore"
+  ],
+  "(d) Attribution + uncertainty + equity": [
+   "Marakkanam",
+   "Mahabalipuram",
+   "Mimisal"
+  ]
+ },
+ "corr_V_E_spearman": 0.855,
+ "equity_crosscheck": {
+  "localities": [
+   "Chennai",
+   "Cuddalore",
+   "Nagapattinam",
+   "Thoothukudi"
+  ],
+  "spearman_V_vs_partial_equity_index": 0.8
+ },
+ "observed_event_days": 233,
+ "observed_events_reproduced": 78
+}

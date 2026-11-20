@@ -1,0 +1,11 @@
+locality,rank_lambda_0.0,rank_lambda_0.25,rank_lambda_0.5,rank_lambda_1.0,rank_lambda_2.0,rank_lambda_4.0
+Chennai,1.0,1.0,2.0,4.0,5.0,6.0
+Mahabalipuram,3.0,3.0,3.0,2.0,3.0,3.0
+Marakkanam,2.0,2.0,1.0,1.0,1.0,1.0
+Cuddalore,5.0,6.0,6.0,6.0,6.0,5.0
+Nagapattinam,7.0,7.0,7.0,7.0,7.0,7.0
+Adirampattinam,6.0,5.0,5.0,5.0,4.0,4.0
+Mimisal,4.0,4.0,4.0,3.0,2.0,2.0
+Ramanathapuram,9.0,8.0,8.0,8.0,8.0,8.0
+Thoothukudi,8.0,9.0,9.0,9.0,9.0,9.0
+Kanyakumari,10.0,10.0,10.0,10.0,10.0,10.0

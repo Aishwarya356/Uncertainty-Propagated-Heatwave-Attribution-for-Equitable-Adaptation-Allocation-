@@ -1,0 +1,7 @@
+rule_1,rule_2,spearman_rho,spearman_p,kendall_tau,kendall_p,top3_overlap,mean_abs_rank_shift,max_abs_rank_shift,budget_moved_pct
+(a) Historical vulnerability,(b) Forecast risk,-0.043,0.906,0.0,1.0,1,3.4,9.0,27.2
+(a) Historical vulnerability,(c) Attribution only,0.583,0.077,0.414,0.102,2,2.0,5.0,23.3
+(a) Historical vulnerability,(d) Attribution + uncertainty + equity,0.394,0.26,0.289,0.291,2,2.6,6.0,25.6
+(b) Forecast risk,(c) Attribution only,0.354,0.316,0.119,0.645,0,2.6,6.0,33.6
+(b) Forecast risk,(d) Attribution + uncertainty + equity,0.828,0.003,0.69,0.006,2,1.2,3.0,12.7
+(c) Attribution only,(d) Attribution + uncertainty + equity,0.546,0.102,0.46,0.069,1,2.4,4.0,23.6

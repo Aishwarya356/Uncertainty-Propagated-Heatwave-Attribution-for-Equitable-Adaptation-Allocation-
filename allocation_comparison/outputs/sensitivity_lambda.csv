@@ -1,0 +1,7 @@
+lambda,spearman_vs_a,spearman_vs_b,spearman_vs_c,top3
+0.0,0.03,0.939,0.423,"Chennai, Marakkanam, Mahabalipuram"
+0.25,0.164,0.926,0.436,"Chennai, Marakkanam, Mahabalipuram"
+0.5,0.261,0.902,0.46,"Marakkanam, Chennai, Mahabalipuram"
+1.0,0.394,0.828,0.546,"Marakkanam, Mahabalipuram, Mimisal"
+2.0,0.539,0.718,0.669,"Marakkanam, Mimisal, Mahabalipuram"
+4.0,0.564,0.681,0.718,"Marakkanam, Mimisal, Mahabalipuram"

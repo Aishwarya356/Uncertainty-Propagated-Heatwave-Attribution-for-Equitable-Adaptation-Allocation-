@@ -1,0 +1,11 @@
+locality,district,lat,lon,imputed_share,low_confidence,n_events,data_mode
+Chennai,Chennai,13.08,80.27,0.003,False,18,real
+Mahabalipuram,Chengalpattu,12.62,80.19,0.0015,False,13,real
+Marakkanam,Villupuram,12.2,79.95,0.0007,False,12,real
+Cuddalore,Cuddalore,11.75,79.77,0.0007,False,9,real
+Nagapattinam,Nagapattinam,10.77,79.84,0.0007,False,8,real
+Adirampattinam,Thanjavur,10.34,79.38,0.0007,False,8,real
+Mimisal,Pudukkottai,10.0,79.1,0.0007,False,8,real
+Ramanathapuram,Ramanathapuram,9.36,78.84,0.0007,False,1,real
+Thoothukudi,Thoothukudi,8.76,78.13,0.0007,False,1,real
+Kanyakumari,Kanniyakumari,8.08,77.55,0.0007,False,0,real

@@ -1,0 +1,5 @@
+variant,spearman_vs_c,spearman_vs_previous,top3
+"c: point estimate, no uncertainty, no equity",1.0,,"Mimisal, Adirampattinam, Cuddalore"
+"d0: + uncertainty propagation (E[PN], no penalty)",0.399,0.399,"Chennai, Marakkanam, Mahabalipuram"
+"d1: + uncertainty penalty (U), lambda=0",0.423,0.988,"Chennai, Marakkanam, Mahabalipuram"
+"d: + equity, lambda=1 (proposed)",0.546,0.903,"Marakkanam, Mahabalipuram, Mimisal"

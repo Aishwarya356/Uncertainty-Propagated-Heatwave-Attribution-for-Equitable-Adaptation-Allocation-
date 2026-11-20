@@ -1,0 +1,117 @@
+Done.
+Models: 33 | events: 78 | samples: 50
+
+Scores:
+                     a      b      c      d
+Chennai         0.088  7.273  0.004  1.088
+Mahabalipuram   0.325  7.000  0.022  1.155
+Marakkanam      0.631  6.818  0.033  1.424
+Cuddalore       0.239  4.364  0.038  0.831
+Nagapattinam    0.340  3.909  0.034  0.719
+Adirampattinam  0.651  3.909  0.040  0.980
+Mimisal         0.592  3.909  0.044  1.092
+Ramanathapuram  0.327  2.000  0.000  0.067
+Thoothukudi     0.122  1.182  0.000  0.043
+Kanyakumari     0.301  0.909  0.000  0.000
+
+Ranks:
+                    a     b    c     d
+Chennai         10.0   1.0  7.0   4.0
+Mahabalipuram    6.0   2.0  6.0   2.0
+Marakkanam       2.0   3.0  5.0   1.0
+Cuddalore        8.0   4.0  3.0   6.0
+Nagapattinam     4.0   6.0  4.0   7.0
+Adirampattinam   1.0   6.0  2.0   5.0
+Mimisal          3.0   6.0  1.0   3.0
+Ramanathapuram   5.0   8.0  9.0   8.0
+Thoothukudi      9.0   9.0  9.0   9.0
+Kanyakumari      7.0  10.0  9.0  10.0
+
+Pairwise:
+                          rule_1                                  rule_2  spearman_rho  spearman_p  kendall_tau  kendall_p  top3_overlap  mean_abs_rank_shift  max_abs_rank_shift  budget_moved_pct
+0  (a) Historical vulnerability                       (b) Forecast risk        -0.043       0.906        0.000      1.000             1                  3.4                 9.0              27.2
+1  (a) Historical vulnerability                    (c) Attribution only         0.583       0.077        0.414      0.102             2                  2.0                 5.0              23.3
+2  (a) Historical vulnerability  (d) Attribution + uncertainty + equity         0.394       0.260        0.289      0.291             2                  2.6                 6.0              25.6
+3             (b) Forecast risk                    (c) Attribution only         0.354       0.316        0.119      0.645             0                  2.6                 6.0              33.6
+4             (b) Forecast risk  (d) Attribution + uncertainty + equity         0.828       0.003        0.690      0.006             2                  1.2                 3.0              12.7
+5          (c) Attribution only  (d) Attribution + uncertainty + equity         0.546       0.102        0.460      0.069             1                  2.4                 4.0              23.6
+
+Ablation:
+                                              variant  spearman_vs_c  spearman_vs_previous                                top3
+0       c: point estimate, no uncertainty, no equity          1.000                   NaN  Mimisal, Adirampattinam, Cuddalore
+1  d0: + uncertainty propagation (E[PN], no penalty)          0.399                 0.399  Chennai, Marakkanam, Mahabalipuram
+2            d1: + uncertainty penalty (U), lambda=0          0.423                 0.988  Chennai, Marakkanam, Mahabalipuram
+3                   d: + equity, lambda=1 (proposed)          0.546                 0.903  Marakkanam, Mahabalipuram, Mimisal
+
+Lambda:
+    lambda  spearman_vs_a  spearman_vs_b  spearman_vs_c                                top3
+0    0.00          0.030          0.939          0.423  Chennai, Marakkanam, Mahabalipuram
+1    0.25          0.164          0.926          0.436  Chennai, Marakkanam, Mahabalipuram
+2    0.50          0.261          0.902          0.460  Marakkanam, Chennai, Mahabalipuram
+3    1.00          0.394          0.828          0.546  Marakkanam, Mahabalipuram, Mimisal
+4    2.00          0.539          0.718          0.669  Marakkanam, Mimisal, Mahabalipuram
+5    4.00          0.564          0.681          0.718  Marakkanam, Mimisal, Mahabalipuram
+
+Alt specs:
+                                       variant  spearman_vs_primary_version  spearman_vs_d                                 top3
+0                       b: SSP5-8.5 2021-2040                        1.000          0.828   Chennai, Mahabalipuram, Marakkanam
+1                       b: SSP2-4.5 2041-2060                        0.950          0.865   Marakkanam, Chennai, Mahabalipuram
+2                   a: housing domain dropped                        0.855          0.406  Marakkanam, Adirampattinam, Mimisal
+3      d: equity = full vulnerability index V                        0.903          0.903  Marakkanam, Adirampattinam, Mimisal
+4  d: no uncertainty penalty (E[PN] x equity)                        0.988          0.988   Marakkanam, Mahabalipuram, Chennai
+
+Rank uncertainty (d):
+                 rank_d_point  rank_median_over_samples  ...  rank_q95  P_top3
+locality                                                ...                  
+Chennai                  4.0                      5.25  ...       7.0    0.40
+Mahabalipuram            2.0                      4.50  ...       6.0    0.34
+Marakkanam               1.0                      2.00  ...       5.5    0.68
+Cuddalore                6.0                      5.50  ...       7.0    0.06
+Nagapattinam             7.0                      5.75  ...       7.0    0.02
+Adirampattinam           5.0                      5.00  ...       6.0    0.30
+Mimisal                  3.0                      4.00  ...       5.5    0.30
+Ramanathapuram           8.0                      8.00  ...       9.0    0.00
+Thoothukudi              9.0                      9.00  ...       9.0    0.00
+Kanyakumari             10.0                     10.00  ...      10.0    0.00
+
+[10 rows x 5 columns]
+
+Vulnerability:
+                 domain_sensitivity  ...  equity_weight_E
+locality                            ...                 
+Chennai                     0.0000  ...           0.0882
+Mahabalipuram               0.1488  ...           0.6340
+Marakkanam                  0.6906  ...           1.0000
+Cuddalore                   0.0431  ...           0.4848
+Nagapattinam                0.5199  ...           0.3182
+Adirampattinam              1.0000  ...           0.7591
+Mimisal                     0.6177  ...           0.9323
+Ramanathapuram              0.1509  ...           0.6393
+Thoothukudi                 0.1905  ...           0.0000
+Kanyakumari                 0.4614  ...           0.2588
+
+[10 rows x 5 columns]
+
+Forecast:
+                 observed_hw_days_per_season_2010_2020  ...     shares_IMD_grid_cell_with
+locality                                               ...                              
+Chennai                                          5.09  ...                              
+Mahabalipuram                                    3.73  ...                              
+Marakkanam                                       3.36  ...                              
+Cuddalore                                        2.64  ...                              
+Nagapattinam                                     2.00  ...       Adirampattinam, Mimisal
+Adirampattinam                                   2.00  ...         Nagapattinam, Mimisal
+Mimisal                                          2.00  ...  Nagapattinam, Adirampattinam
+Ramanathapuram                                   0.18  ...                              
+Thoothukudi                                      0.18  ...                              
+Kanyakumari                                      0.00  ...                              
+
+[10 rows x 7 columns]
+
+Deltas:
+       scenario_window  n_models  median_MarJun_warming_C  p10_C  p90_C
+0  SSP2-4.5 2021-2040        33                    0.431  0.156  0.662
+1  SSP5-8.5 2021-2040        33                    0.489 -0.120  0.728
+2  SSP2-4.5 2041-2060        33                    1.100  0.738  1.514
+
+P2 check: {'localities': ['Chennai', 'Cuddalore', 'Nagapattinam', 'Thoothukudi'], 'spearman_V_vs_partial_equity_index': np.float64(0.8)} | corr V-E: 0.855

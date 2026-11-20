@@ -1,0 +1,6 @@
+variant,spearman_vs_primary_version,spearman_vs_d,top3
+b: SSP5-8.5 2021-2040,1.0,0.828,"Chennai, Mahabalipuram, Marakkanam"
+b: SSP2-4.5 2041-2060,0.95,0.865,"Marakkanam, Chennai, Mahabalipuram"
+a: housing domain dropped,0.855,0.406,"Marakkanam, Adirampattinam, Mimisal"
+d: equity = full vulnerability index V,0.903,0.903,"Marakkanam, Adirampattinam, Mimisal"
+d: no uncertainty penalty (E[PN] x equity),0.988,0.988,"Marakkanam, Mahabalipuram, Chennai"
