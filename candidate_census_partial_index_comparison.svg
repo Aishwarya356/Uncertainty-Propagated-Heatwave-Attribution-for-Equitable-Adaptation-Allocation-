@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="540" viewBox="0 0 1050 540">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,sans-serif;fill:#243447}.title{font-size:23px;font-weight:bold}.subtitle{font-size:14px}.label{font-size:16px}.value{font-size:15px;font-weight:bold}.tick{font-size:13px}</style>
+<text x="45" y="40" class="title">Candidate Census-unit partial vulnerability index</text>
+<text x="45" y="68" class="subtitle">2011 observations • two domains only • candidate units, not verified study-locality scores</text>
+<line x1="240.0" y1="105" x2="240.0" y2="445" stroke="#dbe2ea" stroke-width="1"/>
+<text x="240.0" y="473" text-anchor="middle" class="tick">0.00</text>
+<line x1="386.0" y1="105" x2="386.0" y2="445" stroke="#dbe2ea" stroke-width="1"/>
+<text x="386.0" y="473" text-anchor="middle" class="tick">0.02</text>
+<line x1="532.0" y1="105" x2="532.0" y2="445" stroke="#dbe2ea" stroke-width="1"/>
+<text x="532.0" y="473" text-anchor="middle" class="tick">0.04</text>
+<line x1="678.0" y1="105" x2="678.0" y2="445" stroke="#dbe2ea" stroke-width="1"/>
+<text x="678.0" y="473" text-anchor="middle" class="tick">0.06</text>
+<line x1="824.0" y1="105" x2="824.0" y2="445" stroke="#dbe2ea" stroke-width="1"/>
+<text x="824.0" y="473" text-anchor="middle" class="tick">0.08</text>
+<line x1="970.0" y1="105" x2="970.0" y2="445" stroke="#dbe2ea" stroke-width="1"/>
+<text x="970.0" y="473" text-anchor="middle" class="tick">0.10</text>
+<text x="224" y="155.7" text-anchor="end" class="label">Chennai</text>
+<rect x="240" y="122.0" width="403.3" height="46.8" rx="5" fill="#1f7a8c"/>
+<text x="653.3" y="155.7" class="value">0.055243</text>
+<text x="224" y="240.7" text-anchor="end" class="label">Cuddalore</text>
+<rect x="240" y="207.0" width="538.7" height="46.8" rx="5" fill="#1f7a8c"/>
+<text x="788.7" y="240.7" class="value">0.073797</text>
+<text x="224" y="325.7" text-anchor="end" class="label">Nagapattinam</text>
+<rect x="240" y="292.0" width="460.1" height="46.8" rx="5" fill="#1f7a8c"/>
+<text x="710.1" y="325.7" class="value">0.063031</text>
+<text x="224" y="410.7" text-anchor="end" class="label">Thoothukudi</text>
+<rect x="240" y="377.0" width="407.7" height="46.8" rx="5" fill="#1f7a8c"/>
+<text x="657.7" y="410.7" class="value">0.055850</text>
+<line x1="240" y1="445" x2="970" y2="445" stroke="#243447"/>
+<text x="605.0" y="516" text-anchor="middle" class="label">Index value (axis shown from 0 to 0.10)</text>
+<text x="45" y="515" class="subtitle">Higher value means higher disadvantage under this provisional partial formula. Small gaps should not be over-interpreted.</text>
+</svg>
